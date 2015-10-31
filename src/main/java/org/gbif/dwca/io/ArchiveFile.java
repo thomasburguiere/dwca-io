@@ -42,7 +42,7 @@ import org.apache.commons.lang3.StringUtils;
 public class ArchiveFile implements Iterable<Record> {
   private static final TermFactory TERM_FACTORY = TermFactory.instance();
 
-  public class ArchiveFieldIndexComparator implements Comparator<ArchiveField> {
+  public static class ArchiveFieldIndexComparator implements Comparator<ArchiveField> {
 
     public int compare(ArchiveField o1, ArchiveField o2) {
       if (o1.getIndex() == null && o2.getIndex() == null) {
